@@ -423,3 +423,23 @@ footer {
   text-decoration: none;
   color: #333;
 }
+
+
+/*             */
+.sobre {
+  text-align: center;
+  width: 1500px;
+  right: 0%;
+  left: 9%;
+  font: 22pt sans-serif;
+  color: white;
+  position: relative;
+  top: -30px;
+  
+}
+
+.corpo1 {
+  background-color: #181717;
+  position: relative;
+  top: 27px;
+}
