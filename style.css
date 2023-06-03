@@ -1,0 +1,425 @@
+body {
+  zoom: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.primeira-parte {
+  position: relative;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.primeira-parte img {
+  display: block;
+  width: 100%;
+  height: 120%;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+
+}
+
+.texto {
+  position: relative;
+  top: -150px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding: 60px;
+  font-size: 4rem;
+  line-height: 1;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -600px;
+}
+
+h3 {
+  position: relative;
+  top: -600px;
+  color: white;
+  font-weight: 400;
+  font-size: 19pt;
+  font-family: "open Sans", sans-serif;
+  padding-top: none;
+  width: 800px;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: solid;
+  text-align: center;
+}
+
+#botao1 {
+  color: black;
+  text-align: center;
+  background: #fffafa;
+  width: auto;
+  font-family: cursive;
+  position: relative;
+  border-radius: .375rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.462);
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #0b0b0b;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 10px;
+  font-size: 1.25rem;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10PX;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  width: auto;
+  text-align: left;
+  color: black;
+  border-radius: 5px;
+  font-family: cursive;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.backtxt1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #757575;
+}
+
+.pagina2 {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  padding: 200px;
+  right: auto;
+  left: auto;
+}
+
+.cp2 {
+  position: relative;
+  margin: none;
+  top: -420px;
+  padding: 10vw 70vh;
+  width: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(80%);
+}
+
+/*              Acolhimento                          */ 
+.imga {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -390px;
+  right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(80%);
+}
+
+.sub {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  font-size: 40pt;
+  font-family: "open Sans", sans-serif;
+  margin-left: auto;
+  text-align: center;
+}
+
+.acolhimento {
+  width: 780px;
+  height: 500px;
+  box-shadow: #ffffff;
+  text-align: right;
+}
+
+.tex {
+  position: relative;
+  top: 0px;
+  color: white;
+  font-weight: 400;
+  font-size: 19pt;
+  font-family: "open Sans", sans-serif;
+  padding-top: none;
+  width: 1000px;
+  text-align: center;
+}
+ /*                Orientação juridica                           */
+.container {
+  display: flex;
+  align-items: right;
+}
+
+
+.imagem {
+  width: 720px;
+  height: 500px;
+  position: relative;
+  left: 40%;
+  top: -20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(80%);
+  
+
+
+}
+.tex2 {
+  position: relative;
+  left: 100px;
+  top: -180px;
+  color: white;
+  font-weight: 400;
+  font-size: 19pt;
+  font-family: "open Sans", sans-serif;
+  padding-top: none;
+  width: 850px;
+  text-align: center;
+}
+
+.texto {
+  position: relative;
+  top: -150px;
+  left: 100px;
+  right: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 40pt;
+  font-family: "open Sans", sans-serif;
+  margin-left: auto;
+  text-align: center;
+}
+/*              Aconselhamento psicologico               */
+
+.imga2 {
+  width: 780px;
+  height: 500px;
+  box-shadow: #ffffff;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -100px;
+  right: -25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(70%);
+}
+
+.texto2 {
+  position: relative;
+  top: 380px;
+  left: 350px;
+  right: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 40pt;
+  font-family: "open Sans", sans-serif;
+  margin-left: auto;
+  text-align: center;
+
+}
+
+
+.tex3 {
+  position: relative;
+  left: 820px;
+  top:350px;
+  color: white;
+  font-weight: 400;
+  font-size: 19pt;
+  font-family: "open Sans", sans-serif;
+  padding-top: none;
+  width: 1000px;
+  text-align: center;
+}
+
+/*             Formulario                       */
+
+
+.container3 {
+  position: relative;
+  top: 283px;
+  right: 0%;
+  left: 65%;
+  transform: translateY(-50%);
+  width: 500px;
+  
+}
+.container3 {
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 5px;
+  width: 600px;
+  display: inline-block;
+}
+
+
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 557px;
+
+}
+
+label {
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+input[type="text"],
+textarea {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: rgb(12, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#email {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#mensagem {
+  width: 500px;
+  height: 350px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  max-width: 600px;
+  max-height: 200;
+}
+
+
+.formu {
+  position: relative;
+  top: 0px;
+  left: 31%;
+  width: 612px;
+}
+
+/*         localizacao             */
+
+
+
+.container4 {
+  position: absolute;
+  top: 4050px;
+  line-height: 1;
+  width: 60%;
+}
+
+#mapa {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  top: -6px;
+  border-radius: 0%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(100%);
+  max-height: 500px;
+}
+
+.msgform {
+  left: -24%;
+  top: 10px;
+  position: relative;
+  text-align: left;
+}
+
+#end {
+  font-size:28px;
+  color: white;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  width: 400px;
+}
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.devs, .redes-sociais {
+  margin-bottom: 20px;
+}
+
+.redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-sociais li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: #333;
+}

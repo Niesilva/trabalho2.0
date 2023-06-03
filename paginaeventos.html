@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gustavo1.1</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS0kaSJxY2XpyFGk4wQA0n0ChhK_1pSKs&callback=initMap" async defer></script>
+  <style>
+    #mapa {
+      height: 400px;
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <!-- Resto do seu código HTML -->
+
+  <div class="container4">
+    <div>
+      <p id="localizacao"></p>
+    </div>
+  </div>
+
+  <div id="mapa"></div>
+
+  <footer>
+    <!-- Resto do seu código HTML -->
+  </footer>
+
+  <script>
+    function initMap() {
+      // Verifica se o navegador suporta a API de Geolocalização
+      if (navigator.geolocation) {
+        // Obtém a localização atual do usuário
+        navigator.geolocation.getCurrentPosition(function(position) {
+          // Obtém as coordenadas de latitude e longitude
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          
+          // Exibe a localização no elemento HTML
+          var localizacaoElement = document.getElementById("localizacao");
+          localizacaoElement.innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+
+          // Cria um objeto LatLng com as coordenadas da localização atual
+          var localizacao = { lat: latitude, lng: longitude };
+   
+          // Cria um objeto do mapa e exiba-o dentro do elemento com o id "mapa"
+          var mapa = new google.maps.Map(document.getElementById('mapa'), {
+            center: localizacao,
+            zoom: 12
+          });
+   
+          // Cria um marcador para a localização atual
+          var marcador = new google.maps.Marker({
+            position: localizacao,
+            map: mapa,
+            title: 'Sua Localização'
+          });
+        });
+      } else {
+        // Caso o navegador não suporte a Geolocalização
+        var localizacaoElement = document.getElementById("localizacao");
+        localizacaoElement.innerHTML = "Geolocalização não é suportada pelo seu navegador.";
+      }
+    }
+  </script>
+</body>
+</html>
