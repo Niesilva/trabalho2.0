@@ -4,67 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>gustavo1.1</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS0kaSJxY2XpyFGk4wQA0n0ChhK_1pSKs&callback=initMap" async defer></script>
+   <link rel="stylesheet" href="style.css">
+      <title>Eventos</title>
+  
   <style>
-    #mapa {
-      height: 400px;
-      width: 50%;
+    body {
+      background-color: #000028cc;
     }
   </style>
 </head>
 <body>
-  <header></header>
-  <!-- Resto do seu código HTML -->
-
-  <div class="container4">
-    <div>
-      <p id="localizacao"></p>
+  <header>
+  </header>
+  <section style="background-color: #0000006d; height: 800px;">
+    <div class="primeira-parte">
     </div>
+    <a href="pagina1.html"><img class="img" src="s-(1).png" alt="Logo"></a>
+    <h2 class="titulo">Eventos</h2>
+    <img class="imagemevento1" src="convento.jpg" alt="evento1">
+  </section>
+  <nav class="menu">
+    <ul>
+      <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="pagina1.html">Pagina inicial</a></button></li>
+      <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="#">Apoio</a></button></li>
+      <li><button class="interaçao" type="button" style="border-radius: 20px; width: 180px;"><a href="#">Tipos de Violência</a></button></li>
+      <li><button class="interaçao" type="button" style="border-radius: 20px; width: 150px;"><a href="#">Superações </a></button></li>
+    </ul>
+  </nav>
+
+  <h3 class="subtitulo">Encontre espaços de encontro cuidadosamente concebidos para proporcionar um ambiente acolhedor, onde você pode desfrutar de conversas significativas e conexões profundas!
+  </h3>
+
+  <div class="cor1">
+    <div>
+      <img class="imagemevento2" src="Happy Mother's Day! (1).png" alt="adas">
+      <h3 class="text1">A Semana de Eventos 2023, com o tema "Empoderando vítimas e construindo um futuro livre de violência", é um evento dedicado a reunir pessoas comprometidas em combater a violência doméstica e promover a mudança positiva em nossa sociedade. Durante essa semana inspiradora, teremos a oportunidade de nos conectar, aprender e agir juntos em prol de um futuro mais seguro e acolhedor para todas as vítimas. <br> <br>
+
+        Nossos palestrantes e facilitadores especializados compartilharão conhecimentos e experiências valiosas, fornecendo informações essenciais sobre prevenção, assistência, empoderamento e superação da violência doméstica. Serão oferecidas palestras, workshops interativos, grupos de discussão e atividades de conscientização para promover a educação, a empatia e a solidariedade. <br> <br>
+
+        A Semana de Eventos 2023 é uma oportunidade para fortalecermos os laços da comunidade, oferecer apoio mútuo e explorar abordagens inovadoras no enfrentamento da violência doméstica. Juntos, estaremos construindo um futuro onde todas as vítimas sejam empoderadas, onde as vozes sejam ouvidas e onde a violência seja substituída por relações saudáveis e amorosas. <br> <br>
+
+        Participe conosco dessa jornada transformadora e junte-se ao movimento de construção de um futuro livre de violência. Juntos, podemos fazer a diferença e criar um mundo onde cada pessoa tenha o direito de viver em segurança, com dignidade e plenitude. <br> <br>
+
+        <h3 style="position: relative; top: 90px;" class="text2">  Confira nossa última edição!</h3>
+        <div class="bloco3">
+          <div> 
+            <a href=""><img id="img01" src="1-1170x658.png" alt="img1"></a>
+            <a href=""><img id="img02" src="acolhimento-EM.jpg" alt="img2"></a>
+            <a href=""><img id="img03" src="convento.jpg" alt="img3"></a>
+            <a href=""><img id="img04" src="Depositphotos_63702719_XL.jpg" alt="img4"></a>
+            <a href=""><img id="img05" src="fundo.png" alt="img5"></a>
+            <a href=""><img id="img06" src="fundo.png" alt="img6"></a>
+              <h3 class="text3"><a href="">Quero ficar na lista de espera para o próximo evento!</a></h3>
+          </div>
+        </div>
+      </div>
   </div>
 
-  <div id="mapa"></div>
-
-  <footer>
-    <!-- Resto do seu código HTML -->
-  </footer>
-
-  <script>
-    function initMap() {
-      // Verifica se o navegador suporta a API de Geolocalização
-      if (navigator.geolocation) {
-        // Obtém a localização atual do usuário
-        navigator.geolocation.getCurrentPosition(function(position) {
-          // Obtém as coordenadas de latitude e longitude
-          var latitude = position.coords.latitude;
-          var longitude = position.coords.longitude;
-          
-          // Exibe a localização no elemento HTML
-          var localizacaoElement = document.getElementById("localizacao");
-          localizacaoElement.innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
-
-          // Cria um objeto LatLng com as coordenadas da localização atual
-          var localizacao = { lat: latitude, lng: longitude };
-   
-          // Cria um objeto do mapa e exiba-o dentro do elemento com o id "mapa"
-          var mapa = new google.maps.Map(document.getElementById('mapa'), {
-            center: localizacao,
-            zoom: 12
-          });
-   
-          // Cria um marcador para a localização atual
-          var marcador = new google.maps.Marker({
-            position: localizacao,
-            map: mapa,
-            title: 'Sua Localização'
-          });
-        });
-      } else {
-        // Caso o navegador não suporte a Geolocalização
-        var localizacaoElement = document.getElementById("localizacao");
-        localizacaoElement.innerHTML = "Geolocalização não é suportada pelo seu navegador.";
-      }
-    }
-  </script>
 </body>
 </html>
