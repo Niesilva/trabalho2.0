@@ -26,7 +26,7 @@
   <nav class="menu">
     <ul>
       <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="pagina1.html">Pagina inicial</a></button></li>
-      <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="#">Apoio</a></button></li>
+      <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="paginaapoio.html">Apoio</a></button></li>
       <li><button class="interaçao" type="button" style="border-radius: 20px; width: 180px;"><a href="#">Tipos de Violência</a></button></li>
       <li><button class="interaçao" type="button" style="border-radius: 20px; width: 150px;"><a href="#">Superações </a></button></li>
     </ul>
@@ -55,11 +55,57 @@
             <a href=""><img id="img04" src="Depositphotos_63702719_XL.jpg" alt="img4"></a>
             <a href=""><img id="img05" src="fundo.png" alt="img5"></a>
             <a href=""><img id="img06" src="fundo.png" alt="img6"></a>
-              <h3 class="text3"><a href="">Quero ficar na lista de espera para o próximo evento!</a></h3>
+              <a href="paginaapoio.html">
+                <h3 style="color: rgb(253, 253, 253); " class="text3">Quero ficar na lista de espera para o próximo evento!</h3>
+              </a>
           </div>
         </div>
       </div>
   </div>
+  <footer>
+    <footer>
+      <div class="devs">
+        <h4>Desenvolvido por:</h4>
+        <p>Fabiano Tadeu da Silva</p>
+        <p>Jhonata Guilherme</p>
+      </div>
+      <div class="redes-sociais">
+        <h4>Redes Sociais:</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script>
+      var botoes = window.document.querySelectorAll('.interaçao');
+      botoes.forEach(function(botao) {
+        botao.addEventListener('mousemove', Entrar);
+        botao.addEventListener('mouseout', Sair);
+      });
+
+      function Entrar() {
+        this.style.background = "#373538";
+        this.style.color = 'black';
+      }
+
+      function Sair() {
+        this.style.background = 'white';
+      }
+      var mapa ;
+      function initMap() {
+        mapa = new google.maps.Map(document.getElementById('mapa'), {
+          center: {lat: -21.250475960994862, lng: -44.99931009982708},
+          zoom: 16
+        });
+
+  
+      }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS0kaSJxY2XpyFGk4wQA0n0ChhK_1pSKs&callback=initMap" async defer></script>
+  </footer>
 
 </body>
 </html>

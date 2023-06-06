@@ -484,7 +484,7 @@ footer {
   position: relative;
   right: -70cqmax;
   top: -110%;
-  box-shadow: rgba(0,0,40,0.8);
+  box-shadow: #000028cc;
   filter: brightness(70%);
   user-select: none;
 
@@ -573,7 +573,7 @@ footer {
   border: 1px solid #fff4f4;
   border-radius: 10rem;
   text-decoration: none;
-  color:inherit ;
+  color: inherit;
   padding: 10px;
   
 }
