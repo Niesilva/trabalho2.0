@@ -12,15 +12,6 @@ function Entrar() {
 function Sair() {
   this.style.background = 'white';
 }
-var mapa ;
-function initMap() {
-  mapa = new google.maps.Map(document.getElementById('mapa'), {
-    center: {lat: -21.250475960994862, lng: -44.99931009982708},
-    zoom: 16
-  });
-}
-
-
 
 
 
@@ -31,7 +22,7 @@ document.getElementById("radio1").checked = true;
 
 setInterval(function() {
     nextImage();
-}, 5000)
+}, 10000)
 
 function nextImage(){
     count++;

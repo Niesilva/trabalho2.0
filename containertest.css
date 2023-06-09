@@ -1,14 +1,17 @@
 
+body {
+  background-color: rgb(0, 0, 0);}
 
 .testecontainer {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 300vh ;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(34, 32, 32, 0.853);;
+    background-color: rgba(34, 32, 32, 0.853);
+    max-height: 100000px;
   }
 
   .slider {
@@ -21,8 +24,6 @@
     width: 400%;
     height: 400px;
     display: flex;
-
-
   }
 
   .slides input {
@@ -37,6 +38,8 @@
   }
   .slide img {
     width: 800px;
+    user-select: none;
+
   }
 
   .manual-navigation {
@@ -112,3 +115,307 @@
 #radio4:checked ~ .navigation-uto .auto-btn4 {
     background-color: #FFF;
 }
+
+
+
+/* parte css site */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+
+header {
+  position: relative;
+  z-index: 2;
+  font-family: 'Arvo' serif;
+  color: white;
+  margin: 0;
+  padding: 28px;
+  background-color: rgb(21, 20, 20); color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 18pt;
+  
+}
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(20%); 
+
+   
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #0b0b0b;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 10px;
+  font-size: 1.25rem;
+  
+}
+
+.menu {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  zoom: 60%;
+  margin-top: 30px;
+
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10PX;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu a {
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  width: auto;
+  text-align: left;
+  color: black;
+  border-radius: 5px;
+  font-family: cursive;
+}
+a {
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+i.fab.fa-facebook-f {
+  border: none; /* Remover borda */
+  position: relative;
+  right: 60%;
+  color: white;
+  
+  }
+i.fab.fa-instagram{
+  position: relative;
+  right: 58.7%;
+  color: white;
+}  
+i.fab.fa-twitter {
+  position: relative;
+  right: 58.5%;
+  color: white;
+  width: 50px;
+}
+
+.legenda h1 {
+  position:absolute;
+  left: 20px;
+  bottom: 300px;
+  color: white;
+  font-size: 60pt;
+  width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.legenda p {
+  position:absolute;
+  left: 20px;
+  bottom: 180px;
+  color: white;
+  font-size: 20pt;
+  width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.legenda button {
+  color: black;
+  text-align: center;
+  background: #fffafa;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  border-radius: .375rem;
+  padding: 0.75rem 1rem;
+  font-size: 18px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.462);
+}
+
+.testecontainer h2 {
+  position:absolute;
+  left: 20px;
+  bottom: -280px;
+  color: white;
+  font-size: 40pt;
+  width: 1000px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 14.5%;
+}
+
+.testecontainer p {
+  position:absolute;
+  left: 20px;
+  bottom: -850px;
+  color: white;
+  font-size: 15pt;
+  width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 22%;
+}
+
+.testecontainer h3 {
+  position:absolute;
+  left: 20px;
+  bottom: -950px;
+  color: white;
+  font-size: 20pt;
+  width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: -0.8%;
+}
+.testecontainer h4 {
+  position:absolute;
+  left: 20px;
+  bottom: -1490px;
+  color: white;
+  font-size: 20pt;
+  width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 22%;
+}
+.testecontainer button{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;  
+  border-radius: 1.375rem;
+  padding: 0.75rem 7rem;
+  font-size: 18px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.462);
+}
+
+.outer-box {
+  position: absolute;
+  margin-top: 1200px;
+  width: 97%;
+  height: 400px; 
+  padding: 20px; 
+  background-color: rgb(21, 20, 20);;
+}
+
+.box {
+  width: 90%;
+  height: 100%;
+  padding: 10px; 
+  position: absolute;
+  left: 3.5%;
+  bottom: 3.5%;
+}
+
+.frase {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: white;
+  font-size: 25pt;
+  width: 1100px;
+  font-weight: 0;
+  top: 150px;
+}
+
+
+/*                         */
+
+
+.titulo1 {
+  position: relative;
+  top: -270px;
+  left: 20px;
+  right: 0%;
+  color: rgb(255, 255, 255);
+  font-size: 25pt;
+  font-family: 'Times New Roman', Times, serif; 
+  text-align: left;
+  width: 600px;
+  margin-bottom: 20px;
+
+}
+
+.tex2 {
+  position: relative;
+  left: 20px;
+  top: -260px;
+  color: rgb(255, 255, 255);
+  font-size: 15pt;
+  font-family: 'Times New Roman', Times, serif; 
+  width: 650px;
+  text-align: left;
+ 
+}
+
+.imagem {
+  width: 720px;
+  height: auto;
+  max-height: 450px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: 1%;
+  margin-top: -400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  filter: brightness(80%);
+  user-select: none;
+
+  
+}
+.container2 > div{
+  flex-basis: 50%;
+  
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(34, 32, 32, 0.853);
+  }
+
+
+
+/*              Mapa                 */
+
+
+.container4 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+#mapa {
+  height: 100%;
+  width: 100%;
+}
+
+  
