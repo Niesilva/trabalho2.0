@@ -1,31 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apoio</title>
+  <title>Container com Seta</title>
   <style>
-    /* Estilos CSS aqui */
-   
+    .testecontainer {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 300vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(34, 32, 32, 0.853);
+      max-height: 100000px;
+    }
+
+    .slider {
+      margin: 0 auto;
+      width: 800px;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .slides {
+      width: 400%;
+      height: 400px;
+      display: flex;
+    }
+
+    .slides input {
+      display: none;
+    }
+
+    .slide {
+      width: 25%;
+      position: relative;
+      transition: 2s;
+    }
+
+    .slide img {
+      width: 800px;
+      user-select: none;
+    }
+
+    .manual-navigation {
+      position: absolute;
+      width: 800px;
+      margin-top: -40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .manual-btn {
+      border: 2px solid #FFF;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .manual-btn:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+      background-color: #FFF;
+    }
+
+    #radio1:checked ~ .first {
+      margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+      margin-left: -25%;
+    }
+
+    #radio3:checked ~ .first {
+      margin-left: -50%;
+    }
+
+    #radio4:checked ~ .first {
+      margin-left: -75%;
+    }
+
+    .navigation-uto div {
+      border: 2px solid #20a6ff;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .navigation-uto {
+      position: absolute;
+      width: 800px;
+      margin-top: 360px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navigation-uto div:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    #radio1:checked ~ .navigation-uto .auto-btn1 {
+      background-color: #FFF;
+    }
+
+    #radio2:checked ~ .navigation-uto .auto-btn2 {
+      background-color: #FFF;
+    }
+
+    #radio3:checked ~ .navigation-uto .auto-btn3 {
+      background-color: #FFF;
+    }
+
+    #radio4:checked ~ .navigation-uto .auto-btn4 {
+      background-color: #FFF;
+    }
+
+    /* Adicionando a seta */
+    .testecontainer::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      border: 10px solid transparent;
+      border-left-color: rgba(34, 32, 32, 0.853);
+    }
   </style>
 </head>
 <body>
-  <!-- Seu conteúdo HTML aqui -->
+  <div class="testecontainer">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
 
-  <div class="container4">
-    <div id="mapa"></div>
+        <div class="slide first">
+          <img src="imagem1.jpg">
+        </div>
+        <div class="slide">
+          <img src="imagem2.jpg">
+        </div>
+        <div class="slide">
+          <img src="imagem3.jpg">
+        </div>
+        <div class="slide">
+          <img src="imagem4.jpg">
+        </div>
+
+        <div class="manual-navigation">
+          <label class="manual-btn" for="radio1"></label>
+          <label class="manual-btn" for="radio2"></label>
+          <label class="manual-btn" for="radio3"></label>
+          <label class="manual-btn" for="radio4"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-uto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
   </div>
-
-  <script>
-    // Código JavaScript aqui
-    function initMap() {
-      const mapa = new google.maps.Map(document.getElementById('mapa'), {
-        center: { lat: -21.250475960994862, lng: -44.99931009982708 },
-        zoom: 16
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS0kaSJxY2XpyFGk4wQA0n0ChhK_1pSKs&callback=initMap" async defer></script>
 </body>
 </html>

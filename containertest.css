@@ -343,6 +343,7 @@ i.fab.fa-twitter {
   width: 1100px;
   font-weight: 0;
   top: 150px;
+  font-style: oblique;
 }
 
 
@@ -410,12 +411,74 @@ i.fab.fa-twitter {
 .container4 {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 300px;
+  max-height: 500px;
 }
 
 #mapa {
-  height: 100%;
   width: 100%;
+  height: 350px;
+  position: absolute;
+  display: flex;
+  top: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(60%);
+  max-height: 500px
 }
 
-  
+.outer-box1 {
+  width: 500px; /* Largura da caixa externa */
+  height: auto; /* Altura da caixa externa */
+  border : 1px solid #ffffff; /* Borda da caixa externa */
+  padding: 10px; /* Espaçamento interno da caixa externa */
+  position: relative;
+  left: 20px;
+  top: 80px;
+  border-radius: 0.4cm;
+  background-color:  #242324;
+  border-style: solid;
+}
+
+
+.frase1 h1 {
+position: relative;
+top: -15px;
+color: #FFF;
+}
+
+.frase1 h2 {
+color: #FFF;
+position: relative;
+top: -5px;
+font-size: 15pt;
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(95%);
+}
+
+.devs, .redes-sociais {
+  margin-bottom: 20px;
+}
+
+.redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-sociais li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/*           container5                          */
+

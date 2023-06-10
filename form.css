@@ -1,0 +1,99 @@
+.form-container {
+    position: relative;
+    
+  }
+
+  .container5 {
+    background-color: rgba(34, 32, 32, 0.853);
+    height: 550px;
+  }
+  
+  .frase2 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 28pt;
+    width: 700px;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  .form-container p {
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 18pt;
+    width: 700px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+
+  .form-container label,
+  .form-container input,
+  .form-container textarea {
+    position: absolute;
+  }
+
+  .label-nome {
+    top: 100px;
+    left:50%;
+    font-size: 15pt;
+    color: #FFF;
+  }
+
+  .input-nome {
+    top: 140px;
+    left: 50%;
+    padding: 10px;
+    width: 40vh;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #242324 ;
+    
+  }
+
+  .label-email {
+    top: 100px;
+    left:75%;
+    font-size: 15pt;
+    color: #FFF;
+  }
+
+  .input-email {
+    top: 140px;
+    left: 75%;
+    padding: 10px;
+    width: 40vh;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #242324 ;
+  }
+
+  .label-mensagem {
+    top: 225px;
+    left:50%;
+    font-size: 15pt;
+    color: #FFF;
+  }
+
+  .textarea-mensagem {
+    top: 265px;
+    left: 50%;
+    padding: 10px;
+    width: 90.5vh;
+    height: 150px;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #242324 ;
+  }
+
+  #botao2 {
+    margin-top: 450px;
+    margin-left: 86.7%;
+    padding: 10px;
+    width: 20vh;
+    border-radius: 0.7rem;
+  }
