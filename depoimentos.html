@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comentarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS0kaSJxY2XpyFGk4wQA0n0ChhK_1pSKs&callback=initMap" async defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="containertest.css">
+<head>
+  <title>Meu Site</title>
+  <style>
+    /* Adicione estilos CSS personalizados aqui */
+
+
+    header {
+      position: relative;
+    z-index: 2;
+    font-family: 'Arvo' serif;
+    color: white;
+    margin: 0;
+    padding: 28px;
+    background-color: rgba(34, 32, 32, 0.953);
+    text-align: center;
+   font-size: 18pt;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      font-style: oblique;
+    }
+
+    .edit-form {
+      display: none;
+    }
+
+    h1 {
+        text-align: center;
+    
+    }
+    .comment-box {
+      margin-bottom: 10px;
+      padding: 100px;
+      border: 1px solid #ccc;
+      font-style: oblique;
+    }
+
+    .comentario {
+        position: absolute;
+        margin-left: 50%;
+    }
+    .nomec {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 90px;
+    }
+
+    .nomeb{
+        position: absolute;
+        margin-left: 55%;
+        margin-top: 90px;
+        padding-right: 200px; 
+    }
+
+    .coment {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 150px;
+    }
+
+    #comment{
+        position: absolute;
+        margin-left: 56%;
+        margin-top: 150px;
+        height: 100px;
+        width: 348px;
+
+    }
+
+    .b1 {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 250px;
+    }
+
+    footer {
+  background-color: #454141;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+  filter: brightness(95%);
+}
+
+.devs, .redes-sociais {
+  margin-bottom: 20px;
+}
+
+.redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-sociais li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+      Comentários
+        <nav class="menu">
+          <ul>
+            <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="pagina1.html">Pagina inicial</a></button></li>
+            <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="paginaapoio.html">Apoio</a></button></li>
+            <li><button class="interaçao" type="button" style="border-radius: 20px; width: 140px;"><a href="Test.html">Eventos</a></button></li>
+            <li><button class="interaçao" type="button" style="border-radius: 20px; width: 180px;"><a href="paginatiposdeviolencia.html">Tipos de Violência</a></button></li> 
+                   </ul>
+        </nav>
+        <a href="https://www.facebook.com/seu_perfil" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/seu_perfil" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/seu_perfil" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </header>
+      <h1>Depoimentos</h1>
+  
+      <div id="comment-container">
+        <!-- Comentários serão adicionados dinamicamente aqui -->
+      </div>
+    
+      <h2 class="comentario">Deixe um Depoimento:</h2>
+      <form id="comment-form">
+        <label class="nomec" for="name">Nome:</label>
+        <input class="nomeb" type="text" id="name" required>
+        <br>
+
+        <label class="coment" for="comment">Comentário:</label>
+        <textarea id="comment" required></textarea>
+        <br>
+
+        <button class="b1" type="submit">Enviar</button>
+      </form>
+    
+      <div id="edit-form" class="edit-form">
+        <h2>Editar Comentário:</h2>
+        <form id="edit-comment-form">
+          <input type="hidden" id="edit-comment-id">
+          <label for="edit-name">Nome:</label>
+          <input type="text" id="edit-name" required>
+          <br>
+          <label for="edit-comment">Comentário:</label>
+          <textarea id="edit-comment" required></textarea>
+          <br>
+          <button type="submit">Salvar</button>
+          <button type="button" id="cancel-edit-btn">Cancelar</button>
+        </form>
+      </div>
+    
+
+  <section>
+    <h2>Sobre</h2>
+    <p>&copy; 2023 Caminho Seguro. Todos os direitos reservados.</p>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    E-mail: Fabiano.silva@fagammon.edu.br <br> <br>
+
+    Celular: (35) 98715-2565 <br> <br>
+
+    Telefone fixo: (38) 9547-8282
+  </section>
+
+  <footer>
+    <footer>
+      <div class="devs">
+        <h4>Desenvolvido por:</h4>
+        <p>Fabiano Tadeu da Silva</p>
+        <p>Jhonata Guilherme</p>
+      </div>
+      <div class="redes-sociais">
+        <h4>Redes Sociais:</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="scriptt.js"></script>
+    <script>
+        
+         // Função para adicionar um comentário ao container
+        function addComment(commentId, name, comment) {
+          var commentContainer = document.getElementById("comment-container");
+          var newComment = document.createElement("div");
+          newComment.id = "comment-" + commentId;
+          newComment.classList.add("comment");
+          newComment.innerHTML = "<h3>" + name + "</h3><p>" + comment + "</p><button class='edit-btn' onclick='editComment(" + commentId + ")'>Editar</button><button class='delete-btn' onclick='deleteComment(" + commentId + ")'>Excluir</button>";
+          commentContainer.appendChild(newComment);
+        }
+    
+        // Event listener para o envio do formulário
+        var commentForm = document.getElementById("comment-form");
+        commentForm.addEventListener("submit", function(event) {
+          event.preventDefault(); // Evita o envio padrão do formulário
+          var nameInput = document.getElementById("name");
+          var commentInput = document.getElementById("comment");
+          var name = nameInput.value;
+          var comment = commentInput.value;
+          addComment(Date.now(), name, comment); // Gera um ID único usando Date.now()
+          nameInput.value = "";
+          commentInput.value = "";
+          saveComment(name, comment); // Salva o comentário no armazenamento local
+        });
+    
+        // Função para salvar o comentário no armazenamento local
+        function saveComment(name, comment) {
+          var comments = getCommentsFromStorage();
+          comments.push({ name: name, comment: comment });
+          localStorage.setItem("comments", JSON.stringify(comments));
+        }
+    
+        // Função para obter os comentários do armazenamento local
+        function getCommentsFromStorage() {
+          var comments = localStorage.getItem("comments");
+          return comments ? JSON.parse(comments) : [];
+        }
+    
+        // Recupera os comentários do armazenamento local ao carregar a página
+        window.addEventListener("load", function() {
+          var comments = getCommentsFromStorage();
+          for (var i = 0; i < comments.length; i++) {
+            var comment = comments[i];
+            addComment(i, comment.name, comment.comment);
+          }
+        });
+    
+        // Função para editar um comentário existente
+        function editComment(commentId) {
+          var comment = document.getElementById("comment-" + commentId);
+          var editForm = document.getElementById("edit-form");
+          var editCommentIdInput = document.getElementById("edit-comment-id");
+          var editNameInput = document.getElementById("edit-name");
+          var editCommentInput = document.getElementById("edit-comment");
+          var commentText = comment.querySelector("p").textContent;
+          var commentAuthor = comment.querySelector("h3").textContent;
+    
+          // Preenche os campos do formulário de edição com os dados do comentário
+          editCommentIdInput.value = commentId;
+          editNameInput.value = commentAuthor;
+          editCommentInput.value = commentText;
+    
+          // Exibe o formulário de edição e oculta o comentário original
+          toggleEditForm(true);
+          comment.style.display = "none";
+        }
+    
+        // Event listener para o envio do formulário de edição
+        var editCommentForm = document.getElementById("edit-comment-form");
+        editCommentForm.addEventListener("submit", function(event) {
+          event.preventDefault(); // Evita o envio padrão do formulário
+          var commentIdInput = document.getElementById("edit-comment-id");
+          var editNameInput = document.getElementById("edit-name");
+          var editCommentInput = document.getElementById("edit-comment");
+          var commentId = commentIdInput.value;
+          var name = editNameInput.value;
+          var comment = editCommentInput.value;
+          updateComment(commentId, name, comment); // Atualiza o comentário
+        });
+    
+        // Função para atualizar um comentário existente
+        function updateComment(commentId, name, comment) {
+          var comments = getCommentsFromStorage();
+          comments[commentId].name = name;
+          comments[commentId].comment = comment;
+          localStorage.setItem("comments", JSON.stringify(comments));
+    
+          // Atualiza a exibição do comentário na página
+          var commentElement = document.getElementById("comment-" + commentId);
+          commentElement.style.display = "block";
+          commentElement.querySelector("h3").textContent = name;
+          commentElement.querySelector("p").textContent = comment;
+    
+          toggleEditForm(false); // Oculta o formulário de edição
+        }
+    
+        // Função para cancelar a edição de um comentário
+        var cancelEditButton = document.getElementById("cancel-edit-btn");
+        cancelEditButton.addEventListener("click", function() {
+          toggleEditForm(false);
+        });
+    
+        // Função para alternar a exibição do formulário de edição
+        function toggleEditForm(showForm) {
+          var editForm = document.getElementById("edit-form");
+          if (showForm) {
+            editForm.style.display = "block";
+          } else {
+            editForm.style.display = "none";
+          }
+        }
+    
+        // Função para excluir um comentário existente
+        function deleteComment(commentId) {
+          var comments = getCommentsFromStorage();
+          comments.splice(commentId, 1); // Remove o comentário do array
+          localStorage.setItem("comments", JSON.stringify(comments));
+    
+          // Remove o comentário da exibição na página
+          var commentElement = document.getElementById("comment-" + commentId);
+          commentElement.parentNode.removeChild(commentElement);
+        }
+      </script>
+    
+    
+  </footer>
+</body>
+</html>
